@@ -12,23 +12,9 @@ open class CardsCollectionViewLayout: UICollectionViewLayout {
 
   // MARK: - Layout configuration
 
-  public var itemSize: CGSize = CGSize(width: 200, height: 300) {
-    didSet{
-      invalidateLayout()
-    }
-  }
-
-  public var spacing: CGFloat = 10.0 {
-    didSet{
-      invalidateLayout()
-    }
-  }
-
-  public var maximumVisibleItems: Int = 4 {
-    didSet{
-      invalidateLayout()
-    }
-  }
+  public var itemSize: CGSize = CGSize(width: 200, height: 300)
+  public var spacing: CGFloat = 10.0
+  public var maximumVisibleItems: Int = 4
 
   // MARK: UICollectionViewLayout
 
